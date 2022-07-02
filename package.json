@@ -1,0 +1,19 @@
+{
+  "name": "minima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaranP3/minima.git"
+  },
+  "author": "Karan Pillai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KaranP3/minima/issues"
+  },
+  "homepage": "https://github.com/KaranP3/minima#readme"
+}
