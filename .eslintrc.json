@@ -19,5 +19,13 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-plusplus": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "always"
+            }
+          ]
     }
 }
