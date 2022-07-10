@@ -37,4 +37,19 @@ describe('Minima', () => {
     assert.equal(res.headers['access-control-allow-origin'], '*');
     assert.equal(res.data, 'With CORS middleware');
   });
+
+  it('works with basic routing', async () => {
+    const app = new Minima();
+
+    app.get('/hello/:id', (req, res) => res.end(`Hello ${req.params.id}`))
+    app.get('/bye/:id', (req, res) => res.end(`Bye ${req.params.id}`));
+
+    server = app.listen(3000);
+
+    let res = await axios.get('http://localhost:3000/hello/world');
+    assert.equal(res.data, 'Hello world');
+
+    res = await axios.get('http://localhost:3000/bye/world');
+    assert.equal(res.data, 'Bye world');
+  });
 });
