@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/KaranP3/minima/issues"
   },
-  "homepage": "https://github.com/KaranP3/minima#readme"
+  "homepage": "https://github.com/KaranP3/minima#readme",
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "path-to-regexp": "^6.2.1"
+  }
 }
